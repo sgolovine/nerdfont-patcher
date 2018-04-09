@@ -754,7 +754,7 @@ for patch in PATCH_SET:
             if symfont:
                 symfont.close()
                 symfont = None
-            symfont = fontforge.open(__dir__+"/src/glyphs/"+patch['Filename'])
+            symfont = fontforge.open(__dir__+"/glyphs/"+patch['Filename'])
             # Match the symbol font size to the source font size
             symfont.em = sourceFont.em
             PreviousSymbolFilename = patch['Filename']
